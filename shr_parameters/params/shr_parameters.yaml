@@ -1,0 +1,116 @@
+shr_parameters:
+  pddl:
+    instances:
+      LandmarksPerson: {
+        type: string_array,
+        default_value: [ "bedroom", "inside_not_bedroom", "outside" ],
+        description: "all landmarks in protocols",
+      }
+      LandmarksRobot: {
+        type: string_array,
+        default_value: [ "home" , "designated_space" ],
+        description: "all landmarks in protocols",
+      }
+      Persons: {
+        type: string_array,
+        default_value: [ "nathan" ],
+        description: "all people in protocols",
+      }
+    MedicineProtocols:
+      instances: {
+        type: string_array,
+        default_value: [ "am_meds" , "pm_meds" ],
+        description: "medicine protocols",
+      }
+      take_medication_times: {
+        type: string_array,
+        default_value: [ "09h00m0s/10h00m0s", "21h00m0s/22h00m0s" ],
+        description: "time that each protocol is triggered",
+      }
+    InternalCheckReminderProtocols:
+      instances: {
+        type: string_array,
+        default_value: [ "internal_check_reminder" ],
+        description: "internal check reminder protocols",
+      }
+      internal_check_reminder_times: {
+        type: string_array,
+        default_value: [ "08h45m0s/09h45m0s" ],
+        description: "time that each protocol is triggered",
+      }
+    PracticeReminderProtocols:
+      instances: {
+        type: string_array,
+        default_value: [ "practice_reminder" ],
+        description: "medicine protocols",
+      }
+      practice_reminder_times: {
+        type: string_array,
+        default_value: [ "07h30m0s/08h30m0s" ],
+        description: "time that each protocol is triggered",
+      }
+    MoveReminderProtocols:
+      instances: {
+        type: string_array,
+        default_value: [ "move_reminder" ],
+        description: "walking protocols",
+      }
+      move_reminder_times: {
+        type: string_array,
+        default_value: [ "15h00m0s/15h30m0s" ],
+        description: "time that each protocol is triggered",
+      }
+    ExerciseReminderProtocols:
+        instances: {
+          type: string_array,
+          default_value: [ "exercise_reminder" ],
+          description: "walking protocols",
+        }
+        exercise_reminder_times: {
+          type: string_array,
+          default_value: [ "11h30m0s/12h30m0s" ],
+          description: "time that each protocol is triggered",
+        }
+  topics:
+    time: {
+      type: string,
+      default_value: "/protocol_time",
+      description: "topic for protocol clock time",
+    }
+    person_taking_medicine: {
+      type: string,
+      default_value: "/person_taking_medicine",
+      description: "topic for sensor that detect if medication is taken",
+    }
+    person_eating: {
+      type: string,
+      default_value: "/person_eating",
+      description: "topic for sensor that detect if patient is eating",
+    }
+    robot_charging: {
+      type: string,
+      default_value: "/charging",
+      description: "topic for smart plug that detect if robot is charging",
+    }
+
+  person_tf: {
+    type: string,
+    default_value: "nathan",
+    description: "person tf frame id",
+  }
+  robot_tf: {
+    type: string,
+    default_value: "base_link",
+    description: "robot tf frame id",
+  }
+
+
+
+
+
+
+
+
+
+
+

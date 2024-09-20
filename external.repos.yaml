@@ -1,0 +1,45 @@
+repositories:
+  external/audio_common:
+    type: git
+    url: https://github.com/AssistiveRoboticsUNH/audio_common.git
+    version: ros2
+  external/smartthings_ros:
+    type: git
+    url: https://github.com/AssistiveRoboticsUNH/smartthings_ros.git
+    version: main
+  external/realsense:
+    type: git
+    url: https://github.com/IntelRealSense/realsense-ros.git
+    version: ros2-development
+  external/ros2_unity_bridge:
+    type: git
+    url: https://github.com/AssistiveRoboticsUNH/ros2_unity_bridge.git
+    version: main
+  external/ros2_jackal:
+    type: git
+    url: https://github.com/AssistiveRoboticsUNH/ros2_jackal.git
+    version: main
+  external/generate_parameter_library:
+    type: git
+    url: https://github.com/PickNikRobotics/generate_parameter_library.git
+    version: main
+  external/pddl_executor:
+    type: git
+    url: https://github.com/olaghattas/PDDL-Executor.git
+    version: main
+  external/apriltag:
+    type: git
+    url: https://github.com/MarzanShuvo/apriltag.git
+    version: master
+  external/apriltag_ros:
+    type: git
+    url: https://github.com/olaghattas/apriltag_ros.git
+    version: foxy-devel
+  external/tf_to_yaml:
+    type: git
+    url: https://github.com/olaghattas/tf_to_yaml.git
+    version: main
+  external/robot_state_publisher:
+    type: git
+    url: https://github.com/AssistiveRoboticsUNH/robot_state_publisher.git
+    version: ros2
